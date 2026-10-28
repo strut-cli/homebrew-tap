@@ -5,20 +5,20 @@
 class Strut < Formula
   desc "Developer CLI for orchestrating containerized deployments"
   homepage "https://docs.strut.foo"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://brew.strut.foo/strut/v0.2.4/strut_0.2.4_darwin_amd64.tar.gz"
-      sha256 "862c00b6437d9785be53a3dd472304c927114b9665b55fbc2cbc2a3bedf9504c"
+      url "https://brew.strut.foo/strut/v0.2.5/strut_0.2.5_darwin_amd64.tar.gz"
+      sha256 "3d1fb7b856638c7ee54b4db255dccc0a068637b5be75091bf31251bbc8d3dabf"
 
       define_method(:install) do
         bin.install "strut"
       end
     end
     if Hardware::CPU.arm?
-      url "https://brew.strut.foo/strut/v0.2.4/strut_0.2.4_darwin_arm64.tar.gz"
-      sha256 "11e4cc43f8e4bd160345577ca6cb9e08e1ab678405ebb8a009db4929dfb8186f"
+      url "https://brew.strut.foo/strut/v0.2.5/strut_0.2.5_darwin_arm64.tar.gz"
+      sha256 "99e79338e43a7f9db3590ddc803747d30cf908552d023ac008eb04baa9c827f4"
 
       define_method(:install) do
         bin.install "strut"
@@ -28,15 +28,15 @@ class Strut < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://brew.strut.foo/strut/v0.2.4/strut_0.2.4_linux_amd64.tar.gz"
-      sha256 "45bbc83632b6a749cf62156d3064885880485b0de944501018b84d47a8587e85"
+      url "https://brew.strut.foo/strut/v0.2.5/strut_0.2.5_linux_amd64.tar.gz"
+      sha256 "5ce98cede18f3986e6041b17b5ab54bfcb7ccee540d3f956221a27597b950ae9"
       define_method(:install) do
         bin.install "strut"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://brew.strut.foo/strut/v0.2.4/strut_0.2.4_linux_arm64.tar.gz"
-      sha256 "406da46eb56fe61f7b43c029ec0e0dcffb78cbe44cc0cc0f2f6db47b3c6e14ff"
+      url "https://brew.strut.foo/strut/v0.2.5/strut_0.2.5_linux_arm64.tar.gz"
+      sha256 "799ba3d324d21561c17e9ed456e6c995dd43af39b4456170cf9fbf18182c123d"
       define_method(:install) do
         bin.install "strut"
       end
